@@ -10,7 +10,9 @@ $pass_unsafe=$_POST['password'];
 
 $user = mysqli_real_escape_string($con,$user_unsafe);
 $pass1 = mysqli_real_escape_string($con,$pass_unsafe);
+
 $pass=md5($pass1);
+
 $salt="a1Bz20ydqelm8m1wql";
 $pass=$salt.$pass;
 
