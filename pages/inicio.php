@@ -93,7 +93,7 @@ echo $num;
         <div class="icon">  <!--<img height="80" width="80" src="img/ass.png">-->
               <i class=""></i>
             </div>
-            <?php /*echo ($num > 0)*/ ? '<a href="temporada.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
+            <?php echo ($num > 0) ? '<a href="temporada.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
           </div>
         </div>
          <?php
