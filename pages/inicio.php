@@ -90,10 +90,10 @@ echo $num;
       </h4>
               <p>Mi examen</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="img/ass.png">
+        <div class="icon">  <!--<img height="80" width="80" src="img/ass.png">-->
               <i class=""></i>
             </div>
-            <?php echo ($num > 0) ? '<a href="temporada.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
+            <?php /*echo ($num > 0)*/ ? '<a href="temporada.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
           </div>
         </div>
          <?php
@@ -122,10 +122,10 @@ echo $num;
       </h4>
               <p>Docentes</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="img/clientes.png">
+          <div class="icon"> <!-- <img height="80" width="80" src="img/clientes.png">-->
               <i class=""></i>
             </div>
-            <?php echo ($num > 0) ? '<a href="docente.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
+            <?php //echo ($num > 0) ? '<a href="docente.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
           </div>
         </div>
 
@@ -156,10 +156,10 @@ echo $num;
       </h4>
               <p>Alumnos</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="img/comittee.png">
+            <div class="icon"><!--<img height="80" width="80" src="img/comittee.png">-->
               <i class=""></i>
             </div>
-            <?php echo ($num > 0) ? '<a href="alumno.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
+            <?php //echo ($num > 0) ? '<a href="alumno.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
           </div>
         </div>
 
@@ -187,11 +187,11 @@ echo $num;
 ?>
       </h4>
               <p>Configuracion empresa</p>
-            </div>
-            <div class="icon"><img height="80" width="80" src="img/setting.png">
+         </div>
+             <!--  <div class="icon"><img height="80" width="80" src="img/setting.png">-->
               <i class=""></i>
             </div>
-            <?php echo ($num > 0) ? '<a href="configuracion.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
+            <?php //echo ($num > 0) ? '<a href="configuracion.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
           </div>
         </div>
 
@@ -223,10 +223,10 @@ echo $num;
       </h4>
               <p>Cursos</p>
             </div>
-            <div class="icon"><img height="80" width="80" src="img/historial.png">
+           <div class="icon"><!--<img height="80" width="80" src="img/historial.png">-->
               <i class=""></i>
             </div>
-            <?php echo ($num > 0) ? '<a href="temporada.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
+            <?php //echo ($num > 0) ? '<a href="temporada.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
           </div>
         </div>
 
