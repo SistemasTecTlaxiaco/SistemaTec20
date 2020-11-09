@@ -52,7 +52,7 @@ ul {
 
 
                   <div class="box-header">
-                  <h3 class="box-title"> Datos del empresa</h3>
+               <!--   <h3 class="box-title"> Datos del empresa</h3>-->
                 </div><!-- /.box-header -->
                 <div class="box-body">
                 
@@ -71,19 +71,19 @@ ul {
     
         <form class="form-horizontal" method="post" action="puntaje_actualizar.php" enctype='multipart/form-data'>
 
-        <div class="form-group">
-          <label class="control-label col-lg-3" for="name">Puntaje correcto</label>
+        <!---<div class="form-group">
+         <label class="control-label col-lg-3" for="name">Puntaje correcto</label>
           <div class="col-lg-9">
-            <input type="hidden" class="form-control" id="id" name="id_empresa" value="<?php echo $row['id_empresa'];?>" required>
-            <input type="text" class="form-control" id="correcto" name="correcto" value="<?php echo $row['correcto'];?>" required>
+            <input type="hidden" class="form-control" id="id" name="id_empresa" value="<?php //echo $row['id_empresa'];?>" required>
+            <input type="text" class="form-control" id="correcto" name="correcto" value="<?php //echo $row['correcto'];?>" required>
           </div>
-        </div>
-               <div class="form-group">
+        </div>-->
+             <!--  <div class="form-group">
           <label class="control-label col-lg-3" for="price">Puntaje incorrecto</label><br>
           <div class="col-lg-9">
-            <input type="text" class="form-control" id="incorrecto" name="incorrecto" value="<?php echo $row['incorrecto'];?>" required>
+            <input type="text" class="form-control" id="incorrecto" name="incorrecto" value="<?php //echo $row['incorrecto'];?>" required>
           </div>
-        </div>
+        </div>-->
         <br>
         <br>
 
@@ -94,11 +94,11 @@ ul {
   
               
 
-                      <div class="form-group">
+                    <!--  <div class="form-group">
           <label class="control-label col-lg-3" for="name">Actualizar</label>
-          <div class="col-lg-9">
+          <div class="col-lg-9">-->
    
-                <button type="submit" class="btn btn-primary">Guardar cambios</button>
+             <!--   <button type="submit" class="btn btn-primary">Guardar cambios</button>-->
               
           </div>
 

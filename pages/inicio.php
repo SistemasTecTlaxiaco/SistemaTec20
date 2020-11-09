@@ -375,7 +375,7 @@ echo $num;
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-             Sys examen online <a href="#"></a>
+             Sistema myTec <a href="#"></a>
           </div>
           <div class="clearfix"></div>
         </footer>

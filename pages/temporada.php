@@ -58,55 +58,21 @@ ul {
                   <h3 class="box-title"> </h3>
 
                 </div><!-- /.box-header -->
-
-                <a class="btn btn-warning btn-print" href="temporada_agregar.php"    style="height:25%; width:15%; font-size: 12px " role="button">REGISTRAR</a>
-
-
-                
-
-
-
-
-
-
-
-
+<!--Declaramos el boton-->
+               <!--- <a class="btn btn-warning btn-print" href="temporada_agregar.php" style="height:25%; width:15%; font-size: 12px " role="button">REGISTRAR</a>--->
 
                 <div class="box-body">
-                
-         
-
- 
-                        
-            
-
-          
-      
-
-
-
-
-
-
+                 
       
  <!--end of modal-->
 
-
-
-
-
-
-
-
-
-
-
+  <!--
                   <div class="box-header">
                   <h3 class="box-title"> LISTA TEMPORADAS</h3>
-                </div><!-- /.box-header -->
+                </div>--><!-- /.box-header -->
               
 
-
+<!---
                 <div class="box-body">
                 
                   <table id="example2" class="table table-bordered table-striped">
@@ -126,7 +92,7 @@ ul {
  <th class="btn-print"> Accion </th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody>-->
 <?php
    // $branch=$_SESSION['branch'];
     $query=mysqli_query($con,"select * from temporada ")or die(mysqli_error());
@@ -136,17 +102,17 @@ ul {
     $i++;
 ?>
                       <tr >
-
-<td><?php echo $i;?></td>
+<!---
+<td><?php //echo $i;?></td>
 
 
   
-<td><?php echo $row['nombre_temporada'];?></td>
-  <td><?php echo $row['fecha_inicio'];?></td>
+<td><?php //echo $row['nombre_temporada'];?></td>
+  <td><?php //echo $row['fecha_inicio'];?></td>
 
-  <td><?php echo $row['anio'];?></td>
-    <td><?php echo $row['estado_temporada'];?></td>
-                          <td>
+  <td><?php //echo $row['anio'];?></td>
+    <td><?php //echo $row['estado_temporada'];?></td>
+                          <td>-->
                                  <?php
                    
                     
@@ -154,9 +120,8 @@ ul {
 
       
 
-<a class="btn btn-danger btn-print" href="<?php  echo "curso.php?id_temporada=$id_temporada";?>"  role="button">Curso</a>
-
-        <a href="#updateordinance<?php echo $row['id_temporada'];?>" data-target="#updateordinance<?php echo $row['id_temporada'];?>" data-toggle="modal" style="color:#fff;" class="small-box-footer btn-print"><i class="glyphicon glyphicon-edit text-blue"></i></a>
+<!---<a class="btn btn-danger btn-print" href="<?php  echo "curso.php?id_temporada=$id_temporada";?>"  role="button">Curso</a>-->
+  <!---      <a href="#updateordinance<?php echo $row['id_temporada'];?>" data-target="#updateordinance<?php echo $row['id_temporada'];?>" data-toggle="modal" style="color:#fff;" class="small-box-footer btn-print"><i class="glyphicon glyphicon-edit text-blue"></i></a>-->
 
             </td>
                       </tr>

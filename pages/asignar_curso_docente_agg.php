@@ -53,35 +53,16 @@ ul {
  
  <!--end of modal-->
 
-
+<!--
                   <div class="box-header">
                   <h3 class="box-title"> REGISTRAR DOCENTE </h3>
 
-                </div><!-- /.box-header -->
+                </div>
                 <a class="btn btn-warning btn-print" href="docente.php"    style="height:25%; width:15%; font-size: 12px " role="button">Regresar</a>
                 
 
 
-
-
-
-
-
-
-
                 <div class="box-body">
-                
-         
-
- 
-                        
-            
-
-          
-      
-
-
-
 
         <form class="form-horizontal" method="post" action="asignar_curso_docente_add.php" enctype='multipart/form-data'>
 
@@ -97,18 +78,18 @@ ul {
                       <div class="form-group">
                                                   <label >Docente </label>
                  
-                      </div><!-- /.form group -->
+                      </div>
                     </div>
                        <div class="col-md-4 btn-print">
                       <div class="form-group">
                           <select class="form-control select2" name="id_docente" required>
-                            
+                            -->
                             <?php
 
               $queryc=mysqli_query($con,"select * from  usuario where tipo='docente'  ")or die(mysqli_error());
                 while($rowc=mysqli_fetch_array($queryc)){
                 ?>
-                            <option value="<?php echo $rowc['id'];?>"><?php echo $rowc['nombre'].'  '.$rowc['apellido'];?></option>
+                          <!--  <option value="<?php //echo $rowc['id'];?>"><?php //echo $rowc['nombre'].'  '.$rowc['apellido'];?></option>-->
                             <?php }?>
                           </select>
                       </div>

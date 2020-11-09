@@ -52,7 +52,7 @@ ul {
 
 
                   <div class="box-header">
-                  <h3 class="box-title"> Datos del empresa</h3>
+                  <h3 class="box-title"> Datos del Sistema MyTec</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                 
@@ -79,7 +79,7 @@ ul {
           </div>
         </div>
                <div class="form-group">
-          <label class="control-label col-lg-3" for="price">Nit/Ruc</label><br>
+          <label class="control-label col-lg-3" for="price">Numero</label><br>
           <div class="col-lg-9">
             <input type="text" class="form-control" id="price" name="ruc" value="<?php echo $row['ruc'];?>" required>
           </div>

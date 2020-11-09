@@ -61,24 +61,13 @@ ul {
                  <a class = "btn btn-success btn-print" href = "" onclick = "window.print()"><i class ="glyphicon glyphicon-print"></i> Impresión</a>
                 <a class="btn btn-warning btn-print" href="alumno_agregar.php"    style="height:25%; width:15%; font-size: 12px " role="button">REGISTRAR</a>
 
-
-                
-
-
-
-
-
-
-
-
-
                 <div class="box-body">
                 
          
 
  
                         
-            
+                
 
           
       

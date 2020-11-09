@@ -67,6 +67,7 @@
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
+    <!---
        <center>
          <h2>Usuarios/ contraseñas</h2>
          <h4>Docente:Usuario/contraseña=vinicius/vinicius </h4>
@@ -74,7 +75,7 @@
              <h4>alumno:Usuario/contraseña=suckov/suckov </h4>
 <h4>alumno:Usuario/contraseña=sergio/12345 </h4>
 
-       </center>
+       </center>--->
    
 <!-- jQuery 2.1.4 -->
     <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
@@ -89,10 +90,5 @@
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
 
-
-
   </body>
-
-
-
 </html>

@@ -100,10 +100,10 @@ ul {
 
 
 
-
+<!---
                   <div class="box-header">
                   <h3 class="box-title"> LISTA TEMPORADAS</h3>
-                </div><!-- /.box-header -->
+                </div>
               
 
 
@@ -126,7 +126,7 @@ ul {
  <th class="btn-print"> Accion </th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody>-->
 <?php
    // $branch=$_SESSION['branch'];
     $query=mysqli_query($con,"select * from temporada ")or die(mysqli_error());
@@ -135,17 +135,18 @@ ul {
     $id_temporada=$row['id_temporada'];
     $i++;
 ?>
+<!--
                       <tr >
 
-<td><?php echo $i;?></td>
+<td><?php //echo $i;?></td>
 
 
   
-<td><?php echo $row['nombre_temporada'];?></td>
-  <td><?php echo $row['fecha_inicio'];?></td>
+<td><?php //echo $row['nombre_temporada'];?></td>
+  <td><?php //echo $row['fecha_inicio'];?></td>
 
-  <td><?php echo $row['anio'];?></td>
-    <td><?php echo $row['estado_temporada'];?></td>
+  <td><?php //echo $row['anio'];?></td>
+    <td><?php //echo $row['estado_temporada'];?></td>
                           <td>
                                  <?php
                    
@@ -154,12 +155,12 @@ ul {
 
       
 
-<a class="btn btn-danger btn-print" href="<?php  echo "asignar_curso_docente.php?id_temporada=$id_temporada";?>"  role="button">Curso</a>
+<a class="btn btn-danger btn-print" href="<?php  //echo "asignar_curso_docente.php?id_temporada=$id_temporada";?>"  role="button">Curso</a>
 
 
 
             </td>
-                      </tr>
+                      </tr>-->
 
 
  <!--end of modal-->
@@ -191,7 +192,7 @@ ul {
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-            Examen online Sys <a href="#"></a>
+            Examen online MyTec <a href="#"></a>
           </div>
           <div class="clearfix"></div>
         </footer>

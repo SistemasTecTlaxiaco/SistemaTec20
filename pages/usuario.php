@@ -58,7 +58,7 @@ ul {
                   <h3 class="box-title"> </h3>
 
                 </div><!-- /.box-header -->
-                 <a class = "btn btn-success btn-print" href = "" onclick = "window.print()"><i class ="glyphicon glyphicon-print"></i> Impresión</a>
+                <!--- <a class = "btn btn-success btn-print" href = "" onclick = "window.print()"><i class ="glyphicon glyphicon-print"></i> Impresión</a>--->
                 <a class="btn btn-warning btn-print" href="usuario_agregar.php"    style="height:25%; width:15%; font-size: 12px " role="button">REGISTRAR</a>
 
 
@@ -186,7 +186,7 @@ ul {
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-            APSYSTEM <a href="#"></a>
+            MyTec<a href="#"></a>
           </div>
           <div class="clearfix"></div>
         </footer>
