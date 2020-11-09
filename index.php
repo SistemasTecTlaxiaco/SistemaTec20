@@ -41,11 +41,11 @@
         <form action="login.php" method="post">
 
           <div class="form-group has-feedback">
-            <input type="text" class="form-control" id="inputime1" name="username" value="admin" required>
+            <input type="text" class="form-control" id="inputime1" name="username" value="" required>
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="password" class="form-control"  name="password" value="admin" required>
+            <input type="password" class="form-control"  name="password" value="" required>
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
 		  <div class="form-group has-feedback">
@@ -53,7 +53,7 @@
           </div>
           <div class="row">
 			<div class="col-xs-6 pull-right">
-			  <button type="reset" class="btn btn-block btn-flat">Limpiar</button>
+			  <!--<button type="reset" class="btn btn-block btn-flat">Limpiar</button>-->
             </div><!-- /.col -->
 			<div class="col-xs-6 pull-right">
               <button type="submit" class="btn btn-primary btn-block btn-flat" name="login" default>Ingresar</button>
