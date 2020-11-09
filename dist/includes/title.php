@@ -1,3 +1,3 @@
 <?php 
-	echo "Examen online";
+	echo "MyTec20";
 ?>
