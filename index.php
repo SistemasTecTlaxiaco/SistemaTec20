@@ -35,9 +35,9 @@
   
       </div><!-- /.login-logo -->
       <div class="login-box-body">
-
-        <p class="login-box-msg">Inicia sesión para iniciar tu sesión.</p>
-
+      <H1>
+        <p class="login-box-msg">Inicio de sesión </p>
+        </H1>
         <form action="login.php" method="post">
 
           <div class="form-group has-feedback">
@@ -55,11 +55,12 @@
 			<div class="col-xs-6 pull-right">
 			  <!--<button type="reset" class="btn btn-block btn-flat">Limpiar</button>-->
             </div><!-- /.col -->
+            <center>
 			<div class="col-xs-6 pull-right">
               <button type="submit" class="btn btn-primary btn-block btn-flat" name="login" default>Ingresar</button>
 
 
-            </div><!-- /.col -->
+            </div><!-- /.col --></center>
           </div>
         </form>
 
