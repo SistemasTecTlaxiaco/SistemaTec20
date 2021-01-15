@@ -41,3 +41,60 @@ ul {
 
 
 ?>
+  <!-- contenido de pagina -->
+  <div class="right_col" role="main">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class = "x-panel">
+
+            </div>
+
+        </div><!--end of modal-dialog-->
+ </div>
+ 
+
+                 <div class="panel-heading">
+
+
+        </div>
+ 
+
+
+                  <div class="box-header">
+                  <h3 class="box-title"> </h3>
+
+                </div><!-- /.box-header -->
+              
+                <a class="btn btn-success btn-print" href="<?php  echo "curso_agregar.php?id_temporada=$id_temporada";?>"   style="height:25%; width:15%; font-size: 12px " role="button">Registrar</a>  
+     <a class="btn btn-warning btn-print" href="<?php  echo "temporada.php";?>"   style="height:25%; width:15%; font-size: 12px " role="button">retroceder</a>  
+
+                
+
+
+                <div class="box-body">
+                
+
+
+                  <div class="box-header">
+                  <h3 class="box-title"> LISTA CURSO</h3>
+                </div><!-- /.box-header -->
+              
+
+
+                <div class="box-body">
+                
+                  <table id="example2" class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+
+                    <th>#</th>
+                        <th>Nombre curso</th>
+                        <th>Descripcion</th>
+                
+         
+   
+
+ <th class="btn-print"> Accion </th>
+                      </tr>
+                    </thead>
+                    <tbody>
