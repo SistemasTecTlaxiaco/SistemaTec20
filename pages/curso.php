@@ -98,3 +98,74 @@ ul {
                       </tr>
                     </thead>
                     <tbody>
+
+
+
+                    <?php
+   // $branch=$_SESSION['branch'];
+    $query=mysqli_query($con,"select * from curso where id_temporada='$id_temporada' ")or die(mysqli_error());
+    $i=0;
+    while($row=mysqli_fetch_array($query)){
+    $id_curso=$row['id_curso'];
+    $i++;
+?>
+                      <tr >
+
+<td><?php echo $i;?></td>
+
+
+  
+<td><?php echo $row['nombre_curso'];?></td>
+  <td><?php echo $row['descripcion_curso'];?></td>
+
+
+                          <td>
+                                 <?php
+                   
+                    
+                      ?>
+
+      
+<a class="btn btn-danger btn-print" href="<?php  echo "editar_curso.php?id_curso=$id_curso&id_temporada=$id_temporada";?>"  role="button">Editar</a>
+<a class="btn btn-danger btn-print" href="<?php  echo "examen.php?id_curso=$id_curso&id_temporada=$id_temporada";?>"  role="button">Examen</a>
+             <?php
+            //          }
+                      ?>
+
+            </td>
+                      </tr>
+
+ <!--end of modal-->
+
+<?php }?>
+                    </tbody>
+
+                  </table>
+                </div><!-- /.box-body -->
+
+            </div><!-- /.col -->
+
+
+          </div><!-- /.row -->
+
+
+
+
+                </div><!-- /.box-body -->
+
+            </div>
+        </div>
+      </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Parqueamiento Sys <a href="#"></a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
