@@ -101,9 +101,9 @@ ul {
 
 
 
-                    <?php
+<?php
    // $branch=$_SESSION['branch'];
-    $query=mysqli_query($con,"select * from curso where id_temporada='$id_temporada' ")or die(mysqli_error());
+    $query=mysqli_query($con,"select * from curso where id_temporada='$id_temporada' ") or die(mysqli_error());
     $i=0;
     while($row=mysqli_fetch_array($query)){
     $id_curso=$row['id_curso'];
@@ -169,3 +169,36 @@ ul {
         <!-- /footer content -->
       </div>
     </div>
+  
+    <?php include 'datatable_script.php';?>
+
+
+
+<script>
+$(document).ready( function() {
+        $('#example2').dataTable( {
+         "language": {
+           "paginate": {
+              "previous": "anterior",
+              "next": "posterior"
+            },
+            "search": "Buscar:",
+
+
+          },
+   "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+
+
+"searching": true,
+        }
+
+      );
+      } );
+</script>
+
+
+
+
+<!-- /gauge.js -->
+</body>
+</html>
