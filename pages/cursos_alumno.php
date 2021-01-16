@@ -39,4 +39,41 @@ ul {
                     } else{
                       $id_temporada=$_POST['id_temporada'];
                     }
-         ?>
+        ?>
+
+<div class="right_col" role="main">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class = "x-panel">
+            </div>
+        </div>
+      </div>
+        <div class="panel-heading">
+        </div>
+ 
+                <div class="box-header">
+                  <h3 class="box-title"> </h3>
+                </div><!-- encabezado de caja -->
+                  <a class="btn btn-danger btn-print" href="<?php  echo "temporada_alumno.php";?>"  role="button">Retroceder</a>
+                  <a class = "btn btn-success btn-print" href = "" onclick = "window.print()"><i class ="glyphicon glyphicon-print"></i> Impresión</a>
+            
+                <div class="box-body">
+                
+                  <div class="box-header">
+                    <h3 class="box-title"> LISTA CURSOS ALUMNO</h3>
+                  </div><!-- ecabezado de caja -->
+              
+                <div class="box-body">
+                
+                  <table id="example2" class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Nombre curso</th>
+                        <th>Descripcion Curso</th>
+                        <th>Alumno</th>
+ 
+           <th class="btn-print"> Accion </th>
+                      </tr>
+                    </thead>
+                    
