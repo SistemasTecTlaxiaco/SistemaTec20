@@ -31,4 +31,12 @@ ul {
 #buscar{
   text-align: right;
 }
-       </style>
+  </style>
+         <?php            
+          //Añadimos un condicionar de id_temporada (recibiendo el dato de label)
+                    if(isset($_REQUEST['id_temporada'])) {
+                      $id_temporada=$_REQUEST['id_temporada'];
+                    } else{
+                      $id_temporada=$_POST['id_temporada'];
+                    }
+         ?>
