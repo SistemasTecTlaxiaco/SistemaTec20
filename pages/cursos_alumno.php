@@ -105,6 +105,48 @@ $session_id=$_SESSION['id'];
                     
                       ?>
 
-      
+<a class="btn btn-danger btn-print" href="<?php  echo "examen_curso_alumno.php?id_curso=$id_curso&id_temporada=$id_temporada";?>"  role="button"> Examenes</a>
+
+<?php
+//          }
+         ?>
+
+</td>
+         </tr>
+
+
+<?php }?>
+       </tbody>
+
+     </table>
+   </div><!-- /.box-body -->
+
+</div><!-- /.col -->
+
+
+</div><!-- /.row -->
+
+
+
+
+   </div><!-- /.box-body -->
+
+</div>
+</div>
+</div>
+</div>
+<!-- /page content -->
+
+<!-- footer content -->
+<footer>
+<div class="pull-right">
+Examen online  Sys <a href="#"></a>
+</div>
+<div class="clearfix"></div>
+</footer>
+<!-- /footer content -->
+</div>
+</div>
+
 
                     
