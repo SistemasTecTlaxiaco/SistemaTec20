@@ -149,4 +149,34 @@ Examen online  Sys <a href="#"></a>
 </div>
 
 
+<?php include 'datatable_script.php';?>
+
+
+
+<script>
+$(document).ready( function() {
+        $('#example2').dataTable( {
+         "language": {
+           "paginate": {
+              "previous": "anterior",
+              "next": "posterior"
+            },
+            "search": "Buscar:",
+
+
+          },
+   "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+
+
+"searching": true,
+        }
+
+      );
+      } );
+</script>
+
+
+</body>
+</html>
+
                     
