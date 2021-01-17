@@ -76,4 +76,35 @@ ul {
            <th class="btn-print"> Accion </th>
                       </tr>
                     </thead>
+                    <tbody>
+
+
+
+ <?php
+$session_id=$_SESSION['id'];
+    $query=mysqli_query($con,"select * from curso AS c INNER JOIN matricular_curso_alumno AS a ON c.id_curso = a.id_curso INNER JOIN usuario AS u ON u.id = a.id_usuario where id='$session_id' and c.id_temporada='$id_temporada' ")or die(mysqli_error());
+    $i=0;
+    while($row=mysqli_fetch_array($query)){
+
+        $id_curso=$row['id_curso'];
+    $i++;
+?>
+                      <tr >
+
+<td><?php echo $i;?></td>
+
+
+  
+<td><?php echo $row['nombre_curso'];?></td>
+  <td><?php echo $row['descripcion_curso'];?></td>
+  <td><?php echo $row['nombre'].' '.$row['apellido'];?></td>
+
+                          <td>
+                                 <?php
+                   
+                    
+                      ?>
+
+      
+
                     
