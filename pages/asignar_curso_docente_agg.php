@@ -52,3 +52,111 @@ ul {
  
 
                             <?php
+
+              $queryc=mysqli_query($con,"select * from  usuario where tipo='docente'  ")or die(mysqli_error());
+                while($rowc=mysqli_fetch_array($queryc)){
+                ?>
+                          <!--  <option value="<?php //echo $rowc['id'];?>"><?php //echo $rowc['nombre'].'  '.$rowc['apellido'];?></option>-->
+                            <?php }?>
+                          </select>
+                      </div>
+                    </div>
+                           <div class="col-md-4 btn-print">
+                
+                    </div>
+                    </div>
+
+
+          <div class="row">
+                    <div class="col-md-3 btn-print">
+                      <div class="form-group">
+                                                  <label >Curso </label>
+                 
+                      </div><!-- /.form group -->
+                    </div>
+                       <div class="col-md-4 btn-print">
+                      <div class="form-group">
+                          <select class="form-control select2" name="id_curso" required>
+                            
+                            <?php
+
+              $queryc=mysqli_query($con,"select * from curso   ")or die(mysqli_error());
+                while($rowc=mysqli_fetch_array($queryc)){
+                ?>
+                            <option value="<?php echo $rowc['id_curso'];?>"><?php echo $rowc['nombre_curso'];?></option>
+                            <?php }?>
+                          </select>
+                      </div>
+                    </div>
+                           <div class="col-md-4 btn-print">
+                
+                    </div>
+                    </div>   
+
+
+
+                             <div class="row">
+                    <div class="col-md-3 btn-print">
+                      <div class="form-group">
+                                                  <label >Temporada </label>
+                 
+                      </div><!-- /.form group -->
+                    </div>
+                       <div class="col-md-4 btn-print">
+                      <div class="form-group">
+                          <select class="form-control select2" name="id_temporada" required>
+
+                          <?php
+
+$queryc=mysqli_query($con,"select * from temporada   ")or die(mysqli_error());
+  while($rowc=mysqli_fetch_array($queryc)){
+  ?>
+              <option value="<?php echo $rowc['id_temporada'];?>"><?php echo $rowc['nombre_temporada'].' - '.$rowc['anio'] ;?></option>
+              <?php }?>
+            </select>
+        </div>
+      </div>
+             <div class="col-md-4 btn-print">
+  
+      </div>
+      </div>   
+   
+<button type="submit" class="btn btn-primary">Guardar cambios</button>
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal-footer">
+
+
+</div>
+</form>
+
+
+
+
+
+  </div><!-- /.box-body -->
+
+
+</div><!-- /.col -->
+
+
+</div><!-- /.row -->
+
+
+
+
+  </div><!-- /.box-body -->
+
+</div>
+</div>
+</div>
+</div>
