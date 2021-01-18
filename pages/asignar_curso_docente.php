@@ -62,7 +62,7 @@ ul {
         <div class="box-header">
                   <h3 class="box-title"> </h3>
 
-                </div><!-- /.box-header -->
+                </div><!-- encabezado de caja -->
                  <a class = "btn btn-success btn-print" href = "" onclick = "window.print()"><i class ="glyphicon glyphicon-print"></i> Impresión</a>
                 <a class="btn btn-warning btn-print" href="asignar_curso_docente_agregar.php"    style="height:25%; width:15%; font-size: 12px " role="button">ASIGNAR CURSO DOCENTE</a>
 
@@ -77,7 +77,7 @@ ul {
 
                   <div class="box-header">
                   <h3 class="box-title"> LISTA CURSOS ASIGNADOS</h3>
-                </div><!-- /.box-header -->
+                </div><!-- ecabezado de caja -->
               
 
 
@@ -98,3 +98,33 @@ ul {
                       </tr>
                     </thead>
                     <tbody>
+
+ <?php
+    $query=mysqli_query($con,"select * from curso AS c INNER JOIN asignar_curso AS a ON c.id_curso = a.id_curso INNER JOIN usuario AS u ON u.id = a.id_usuario where c.id_temporada='$id_temporada'")or die(mysqli_error());
+    $i=0;
+    while($row=mysqli_fetch_array($query)){
+    $id_asginar_curso=$row['id_asginar_curso'];
+    $id_curso=$row['id_curso'];
+    $i++;
+  ?>
+   <tr >
+
+      <td><?php echo $i;?></td>
+
+        <td><?php echo $row['nombre_curso'];?></td>
+        <td><?php echo $row['descripcion_curso'];?></td>
+        <td><?php echo $row['nombre'].' '.$row['apellido'];?></td>
+
+      <td>
+<?php
+                                      
+?>
+  
+<a class="btn btn-danger btn-print" href="<?php  echo "editar_curso.php?id_curso=$id_curso&id_temporada=id_temporada";?>"  role="button">Editar</a>
+<a class="btn btn-danger btn-print" href="<?php  echo "matricular_curso_alumno.php?id_curso=$id_curso&id_temporada=$id_temporada";?>"  role="button"> Matricular Alumnos</a>
+
+             <?php
+            //          }
+              ?>
+        </td>
+        </tr>
