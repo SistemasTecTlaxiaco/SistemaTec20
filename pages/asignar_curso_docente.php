@@ -31,3 +31,31 @@ ul {
   text-align: right;
 }
        </style>
+
+<?php 
+     if(isset($_REQUEST['id_temporada']))
+            {
+              $id_temporada=$_REQUEST['id_temporada'];
+            }
+            else
+            {
+            $id_temporada=$_POST['id_temporada'];
+          }
+          ?>
+        <!-- contenido de pagina  -->
+        <div class="right_col" role="main">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class = "x-panel">
+
+            </div>
+
+        </div><!--finaliza-->
+ </div>
+ 
+
+                 <div class="panel-heading">
+
+
+        </div>
+ 
