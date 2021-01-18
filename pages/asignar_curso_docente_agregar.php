@@ -153,4 +153,50 @@ $queryc=mysqli_query($con,"select * from curso   ")or die(mysqli_error());
         <div class="form-group">
             <select class="form-control select2" name="id_temporada" required>
               
-              <?php
+<?php
+
+              
+
+    $queryc=mysqli_query($con,"select * from temporada   ")or die(mysqli_error());
+    while($rowc=mysqli_fetch_array($queryc)){
+      ?>
+    <option value="<?php echo $rowc['id_temporada'];?>"><?php echo $rowc['nombre_temporada'].' - '.$rowc['anio'] ;?></option>
+<?php }?>
+          </select>
+        </div>
+        </div>
+        <div class="col-md-4 btn-print">
+
+    </div>
+    </div>   
+ 
+<button type="submit" class="btn btn-primary">Guardar cambios</button>
+
+
+<div class="modal-footer">
+
+
+</div>
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<footer>
+<div class="pull-right">
+Sistema de Examen online <a href="#"></a>
+</div>
+<div class="clearfix"></div>
+</footer>
+</div>
+</div>
