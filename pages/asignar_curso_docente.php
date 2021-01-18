@@ -59,3 +59,42 @@ ul {
 
         </div>
  
+        <div class="box-header">
+                  <h3 class="box-title"> </h3>
+
+                </div><!-- /.box-header -->
+                 <a class = "btn btn-success btn-print" href = "" onclick = "window.print()"><i class ="glyphicon glyphicon-print"></i> Impresión</a>
+                <a class="btn btn-warning btn-print" href="asignar_curso_docente_agregar.php"    style="height:25%; width:15%; font-size: 12px " role="button">ASIGNAR CURSO DOCENTE</a>
+
+          <a class="btn btn-danger btn-print" href="<?php  echo "temporada_asignar_curso.php";?>"  role="button">Retroceder</a>
+
+
+
+
+                <div class="box-body">
+                
+
+
+                  <div class="box-header">
+                  <h3 class="box-title"> LISTA CURSOS ASIGNADOS</h3>
+                </div><!-- /.box-header -->
+              
+
+
+                <div class="box-body">
+                
+                  <table id="example2" class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+
+                    <th>#</th>
+                        <th>Nombre curso</th>
+                        <th>Descripcion Curso</th>
+                
+         <th>Docente</th>
+                       
+     
+ <th class="btn-print"> Accion </th>
+                      </tr>
+                    </thead>
+                    <tbody>
