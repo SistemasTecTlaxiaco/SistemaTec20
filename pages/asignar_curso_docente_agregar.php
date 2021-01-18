@@ -200,3 +200,31 @@ Sistema de Examen online <a href="#"></a>
 </footer>
 </div>
 </div>
+
+<?php include 'datatable_script.php';?>
+
+<script>
+$(document).ready( function() {
+        $('#example2').dataTable( {
+         "language": {
+           "paginate": {
+              "previous": "anterior",
+              "next": "posterior"
+            },
+            "search": "Buscar:",
+
+
+          },
+
+          "info": false,
+          "lengthChange": false,
+          "searching": false,
+          "searching": true,
+        }
+
+      );
+      } );
+</script>
+
+</body>
+</html>
