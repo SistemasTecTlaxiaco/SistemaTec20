@@ -18,3 +18,38 @@
 
         <!-- top navigation -->
        <?php include 'top_nav.php';?>      <!-- /top navigation -->
+       
+       <style>
+label{
+
+color: black;
+}
+li {
+  color: white;
+}
+ul {
+  color: white;
+}
+#buscar{
+  text-align: right;
+}
+       </style>
+  <?php
+     if(isset($_REQUEST['id_curso']))
+            {
+              $id_curso=$_REQUEST['id_curso'];
+            }
+            else
+            {
+            $id_curso=$_POST['id_curso'];
+          }
+     if(isset($_REQUEST['id_temporada']))
+            {
+              $id_temporada=$_REQUEST['id_temporada'];
+            }
+            else
+            {
+            $id_temporada=$_POST['id_temporada'];
+          }
+
+?>
