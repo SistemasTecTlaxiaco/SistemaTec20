@@ -109,3 +109,38 @@ ul {
 
       
  <!--end of modal-->
+ 
+
+
+
+
+
+
+
+
+
+
+ <div class="box-header">
+                  <h3 class="box-title"> LISTA EXAMENES</h3>
+                </div><!-- /.box-header -->
+              
+
+
+                <div class="box-body">
+                
+                  <table id="example2" class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+
+        
+                    
+                        <th>Tema examen</th>
+                        <th>Descripcion examen</th>
+                        <th>Curso</th>
+                 
+     
+
+ <th class="btn-print"> Accion </th>
+                      </tr>
+                    </thead>
+                    <tbody>
