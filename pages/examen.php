@@ -51,5 +51,61 @@ ul {
             {
             $id_temporada=$_POST['id_temporada'];
           }
-
 ?>
+<!-- page content -->
+<div class="right_col" role="main">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class = "x-panel">
+
+            </div>
+
+        </div><!--end of modal-dialog-->
+ </div>
+ 
+
+                 <div class="panel-heading">
+
+
+        </div>
+ 
+ <!--end of modal-->
+
+
+                  <div class="box-header">
+                  <h3 class="box-title"> </h3>
+
+                </div><!-- /.box-header -->
+
+  
+                <a class="btn btn-warning btn-print" href="<?php  echo "examen_agregar.php?id_temporada=$id_temporada&id_curso=$id_curso";?>"  role="button">REGISTRAR</a>
+
+<a class="btn btn-danger btn-print" href="<?php  echo "curso.php?id_temporada=$id_temporada";?>"  role="button">Retroceder</a>
+                
+
+
+
+
+
+
+
+
+
+                <div class="box-body">
+                
+         
+
+ 
+                        
+            
+
+          
+      
+
+
+
+
+
+
+      
+ <!--end of modal-->
