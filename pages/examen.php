@@ -144,3 +144,54 @@ ul {
                       </tr>
                     </thead>
                     <tbody>
+                    <?php
+   // $branch=$_SESSION['branch'];
+    $query=mysqli_query($con,"select * from examen AS e INNER JOIN curso AS c ON e.id_curso = c.id_curso where e.id_curso='$id_curso' ")or die(mysqli_error());
+    $i=0;
+    while($row=mysqli_fetch_array($query)){
+    $id_examen=$row['id_examen'];
+    $i++;
+?>
+                      <tr >
+
+
+
+<td><?php echo $row['tema_examen'];?></td>
+<td><?php echo $row['descripcion_examen'];?></td>
+  <td><?php echo $row['nombre_curso'];?></td>      
+                                 
+
+                          <td>
+                                 <?php
+                   
+                    
+                      ?>
+                      <a class="small-box-footer btn-print" href="<?php  echo "eliminar_examen.php?id_examen=$id_examen&id_temporada=$id_temporada&id_curso=$id_curso";?>" onClick="return confirm('¿Está seguro de que desea eliminar??');"" > <i class="glyphicon glyphicon-remove"></i></a>
+
+
+<a class="btn btn-danger btn-print" href="<?php  echo "pregunta_agregar.php?id_examen=$id_examen&id_temporada=$id_temporada&id_curso=$id_curso";?>"  role="button">Preguntas</a> 
+
+        <a href="#updateordinance<?php echo $row['id_examen'];?>" data-target="#updateordinance<?php echo $row['id_examen'];?>" data-toggle="modal" style="color:#fff;" class="small-box-footer btn-print"><i class="glyphicon glyphicon-edit text-blue"></i></a>
+
+            </td>
+                      </tr>
+        <div id="updateordinance<?php echo $row['id_examen'];?>" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog" style="width: 900px; height: 900px;">
+    <div class="modal-content" style="height:auto">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">ACTUALIZAR EXAMEN</h4>
+              </div>
+              <div class="modal-body" style="width: 100%; height: 100%;">
+        <form class="form-horizontal" method="post" action="examen_actualizar.php" enctype='multipart/form-data'>
+<div class="col-md-12 btn-print">
+        <div class="form-group">
+          <label class="control-label col-lg-3" for="name">Tema examen</label>
+          <div class="input-group col-md-8">
+          
+
+                  <input type="hidden" class="form-control" id="id_examen" name="id_examen" value="<?php echo $id_examen;?>" required>
+                         <input type="hidden" class="form-control" id="id_temporada" name="id_temporada" value="<?php echo $id_temporada;?>" required>
+                                   <input type="hidden" class="form-control" id="id_curso" name="id_curso" value="<?php echo $id_curso;?>" required>
+                <input type="text" class="form-control" id="tema_examen" name="tema_examen" value="<?php echo $row['tema_examen'];?>" required>
