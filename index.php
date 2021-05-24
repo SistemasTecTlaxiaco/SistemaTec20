@@ -51,17 +51,19 @@
 		  <div class="form-group has-feedback">
          
           </div>
+          <center>
           <div class="row">
 			<div class="col-xs-6 pull-right">
 			  <!--<button type="reset" class="btn btn-block btn-flat">Limpiar</button>-->
             </div><!-- /.col -->
             
 			<div class="col-xs-6 pull-right">
-      <center> <button type="submit" class="btn btn-primary btn-block btn-flat" name="login" default>Ingresar</button></center>
+       <button type="submit" class="btn btn-primary btn-block btn-flat" name="login" default>Ingresar</button>
 
 
             </div><!-- /.col -->
           </div>
+          </center>
         </form>
 
 
