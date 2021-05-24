@@ -55,12 +55,12 @@
 			<div class="col-xs-6 pull-right">
 			  <!--<button type="reset" class="btn btn-block btn-flat">Limpiar</button>-->
             </div><!-- /.col -->
-            <center>
+            
 			<div class="col-xs-6 pull-right">
-              <button type="submit" class="btn btn-primary btn-block btn-flat" name="login" default>Ingresar</button>
+      <center> <button type="submit" class="btn btn-primary btn-block btn-flat" name="login" default>Ingresar</button></center>
 
 
-            </div><!-- /.col --></center>
+            </div><!-- /.col -->
           </div>
         </form>
 
