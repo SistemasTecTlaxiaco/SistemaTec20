@@ -24,10 +24,10 @@ label{
 color: black;
 }
 li {
-  color: white;
+  color: blue;
 }
 ul {
-  color: white;
+  color: blue;
 }
 #buscar{
   text-align: right;
@@ -58,8 +58,8 @@ ul {
                   <h3 class="box-title"> </h3>
 
                 </div><!-- /.box-header -->
-                <!-- <a class = "btn btn-success btn-print" href = "" onclick = "window.print()"><i class ="glyphicon glyphicon-print"></i> Impresión</a>-->
-                <a class="btn btn-warning btn-print" href="alumno_agregar.php"    style="height:25%; width:15%; font-size: 12px " role="button">REGISTRAR</a>
+                <a class = "btn btn-success btn-print" href = "" onclick = "window.print()"><i class ="glyphicon glyphicon-print"></i> Impresión</a>
+                <a class="btn btn-warning btn-print" href="alumno_agregar.php"    style="height:50%; width:15%; font-size: 15px " role="button">REGISTRAR</a>
 
                 <div class="box-body">
                 
@@ -126,7 +126,7 @@ ul {
                       <tr >
 
 <td><?php echo $i;?></td>
- <td><IMG src="subir_us/<?php echo $row['imagen'];?>" style="height:50PX" /></td>
+ <td><IMG src="subir_us/<?php echo $row['imagen'];?>" style="height: 60PX" /></td>
               <td><?php echo $row['nombre'].'  '.$row['apellido'];?></td>
 <td><?php echo $row['telefono'];?></td>
 <td><?php echo $row['usuario'];?></td>
