@@ -1,5 +1,5 @@
 <?php
-	include_once('config.php');
+	include_once('pages/config.php');
 	class Model{
 		protected $db;
 		public function __construct(){
