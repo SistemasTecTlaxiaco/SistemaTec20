@@ -39,13 +39,14 @@
         <p class="login-box-msg">Inicio de sesión </p>
         </H1>
         <form action="login.php" method="post">
-
+		<p>Ingrese nombre de usuario</p>
           <div class="form-group has-feedback">
             <input type="text" class="form-control" id="inputime1" name="username" value="" required>
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="password" class="form-control"  name="password" value="" required>
+		  <p>Ingrese nombre Contraseña</p>
+            <input type="password" class="form-control"  name="password" value="password" required>
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
 		  <div class="form-group has-feedback">
@@ -80,7 +81,7 @@
 
        </center>--->
    
-<!-- jQuery 2.1.4 -->
+	<!-- jQuery 2.1.4 -->
     <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
