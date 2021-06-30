@@ -57,7 +57,7 @@
 				cssload-opa 4.22s ease-in-out infinite alternate;
 		-ms-animation: 
 				cssload-rota 1.3s linear infinite,
-				cssload-opa 4.22s ease-in-out infinite alternate;
+				cssload-opa 4.2s ease-in-out infinite alternate;
 		-webkit-animation: 
 				cssload-rota 1.3s linear infinite,
 				cssload-opa 4.22s ease-in-out infinite alternate;
