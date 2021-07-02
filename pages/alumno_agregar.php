@@ -24,10 +24,10 @@ label{
 color: black;
 }
 li {
-  color: white;
+  color: #F0F8FF;
 }
 ul {
-  color: white;
+  color: #F0F8FF;
 }
 #buscar{
   text-align: right;
@@ -61,27 +61,7 @@ ul {
                 <a class="btn btn-warning btn-print" href="docente.php"    style="height:25%; width:15%; font-size: 12px " role="button">Regresar</a>
                 
 
-
-
-
-
-
-
-
-
                 <div class="box-body">
-                
-         
-
- 
-                        
-            
-
-          
-      
-
-
-
 
         <form class="form-horizontal" method="post" action="alumno_add.php" enctype='multipart/form-data'>
 
@@ -252,32 +232,12 @@ ul {
                 
                     </div>
                     </div>
-
-
-             
-                 
+                              
     <button type="submit" class="btn btn-primary">Guardar cambios</button>
               
-
-
-
-
-
-
-
-
-
-
               <div class="modal-footer">
-
-
               </div>
         </form>
-
- 
-
-
-
                 </div><!-- /.box-body -->
 
 
