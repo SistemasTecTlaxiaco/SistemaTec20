@@ -22,10 +22,10 @@ label{
 color: black;
 }
 li {
-  color: white;
+  color: #F0F8FF;
 }
 ul {
-  color: white;
+  color: #F0F8FF;
 }
 #buscar{
   text-align: right;
