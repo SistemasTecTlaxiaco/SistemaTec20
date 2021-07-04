@@ -349,8 +349,17 @@ echo $num;
                       }
                       ?>
                   </div><!--row-->
-                  
-      
+             <div class="col-lg-3 col-xs-6">     
+             <div class="small-box bg-red">
+                 <div class="inner">
+             <p>Visualizacion Realidad Aumentada</p>
+             </div>
+             <div class="icon"><img height="80" width="80" src="img/realidad.png">
+                 <i class=""></i>
+             </div>
+                 <?php echo ($num > 0) ? '<a href="food.php" class="small-box-footer">Mas info<i class="fa fa-arrow-circle-right"></i></a>' : '<a href="#" class="small-box-footer">-------</a>'; ?>
+             </div>
+             </div>
   
    
             </div><!-- /.col (right) -->
