@@ -353,7 +353,8 @@ echo $num;
              <div class="small-box bg-red">
                  <div class="inner">
              <div class="icon"><img height="80" width="80" src="img/realidad.png">
-      
+             <i class=""></i>
+             </div>
               <p>Visualizacion Realidad Aumentada</p>
              </div>
              </div>
