@@ -12,6 +12,10 @@
     	<img src="picture/master.jpg" width="805" height="308"  />
     </div> -->
     
+    	<div > 
+    	<img src="book/master.jpg" width="810" height="310"/>
+    	</div> 
+	
     <div id="space"></div>
     
     <div id="question">
