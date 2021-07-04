@@ -349,8 +349,9 @@ echo $num;
                       }
                       ?>
                   </div><!--row-->
-                  
-      
+             <div class="col-lg-3 col-xs-6">     
+             
+             </div>
   
    
             </div><!-- /.col (right) -->
