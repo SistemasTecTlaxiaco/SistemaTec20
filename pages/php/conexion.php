@@ -3,11 +3,12 @@
 	class Model{
 		protected $db;
 		public function __construct(){
-			$this->db = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+			//quitamos los DB de las variales de conexión 
+			$this->db = new mysqli(HOST, USER, PASS, _NAME);
 			if($this->db->connect_errno){
 				exit();
 			}
-			$this->db->set_charset(DB_CHARSET);
+			$this->db->set_charset(CHARSET);
 		}
 	}
 ?>
