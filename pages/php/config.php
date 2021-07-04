@@ -1,6 +1,6 @@
 <?php
 	//
-	define('HOST', 'localhost');
+	define('HOST', 'https://localhost/SistemaTec20/');
 	define('USER', 'root');
 	define('PASS', '');
 	define('NAME', 'tramite');
