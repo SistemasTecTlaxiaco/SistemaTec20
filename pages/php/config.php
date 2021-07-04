@@ -1,5 +1,5 @@
 <?php
-
+	//quitamos las DB_ de las variables de conexión 
 	define('DB_HOST', 'https://localhost/SistemaTec20/');
 	define('DB_USER', 'root');
 	define('DB_PASS', '');
