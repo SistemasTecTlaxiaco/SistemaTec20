@@ -272,7 +272,7 @@
 </html>
 <?php 
 include('dist/includes/dbcon.php');
-
+require_once('dist/includes/dbcon.php');
 if(isset($_POST['login']))
 {
 
@@ -286,7 +286,7 @@ $pass1 = mysqli_real_escape_string($con,$pass_unsafe);
 $pass=md5($pass1);
 $salt="a1Bz20ydqelm8m1wql";
 $pass=$salt.$pass;
-
+date_default_timezone_set("America/Mexico"); 
 date_default_timezone_set("America/Guayaquil"); 
 $date = date("Y-m-d H:i:s");
 
