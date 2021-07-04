@@ -350,7 +350,8 @@ echo $num;
                       ?>
                   </div><!--row-->
              <div class="col-lg-3 col-xs-6">     
-             
+             <div class="small-box bg-red">
+             </div>
              </div>
   
    
